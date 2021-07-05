@@ -1,0 +1,260 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* colors */
+
+:root {
+  --white: #f5f5f5;
+  --red: #982540;
+  --orange: #d75d42;
+  --yellow: #f1b688;
+  --black: #312318;
+  --pic_1r_bkg: #e9675a;
+}
+
+/* menu backgroung gradient */
+.background-container {
+  background: #d75d42;
+  background: linear-gradient(270deg, #d75d42 5%, rgba(241, 182, 136, 0.7) 95%);
+  background: -webkit-linear-gradient(
+    270deg,
+    #d75d42 5%,
+    rgba(241, 182, 136, 0.7) 95%
+  );
+  background: -moz-linear-gradient(
+    270deg,
+    #d75d42 5%,
+    rgba(241, 182, 136, 0.7) 95%
+  );
+}
+
+/* #body-menu {
+  background-color: var(--white);
+} */
+
+.nav-header {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  z-index: 99;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: var(--yellow);
+  border-bottom: 2px solid var(--black);
+}
+
+.header-main h1 {
+  font-size: 2.1rem;
+  color: var(--orange);
+  padding-left: 8px;
+}
+
+.navbar {
+}
+
+.navbar__link {
+  padding: 17px 7px;
+  text-decoration: none;
+  margin: 0;
+  color: var(--black);
+  height: 100%;
+  font-size: 1rem;
+}
+
+.navbar__link:hover {
+  color: var(--white);
+  background-color: var(--red);
+}
+
+.hero {
+  background-image: url(../img/chinese-garden9-16-small.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 650px;
+}
+
+.hero-header {
+  text-align: center;
+  padding-top: 130px;
+  color: var(--red);
+  font-size: 4rem;
+}
+
+/* about section page */
+
+.about-list__sect1 {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  height: 100vh;
+  background: #d75d42;
+  background: linear-gradient(0deg, #d75d42 0%, #e2664a 40%, #f1b688 80%);
+  background: -webkit-linear-gradient(
+    0deg,
+    #d75d42 0%,
+    #e2664a 40%,
+    #f1b688 80%
+  );
+  background: -moz-linear-gradient(0deg, #d75d42 0%, #e2664a 40%, #f1b688 80%);
+}
+
+.about-list__sect1__img {
+  width: 50vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.about-content {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.about-content-container {
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 1;
+}
+
+.about-content-quoted {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.about-list1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #d75d42;
+  background: linear-gradient(180deg, #d75d42 0%, #e2664a 40%, #f1b688 80%);
+  background: -webkit-linear-gradient(
+    180deg,
+    #d75d42 0%,
+    #e2664a 40%,
+    #f1b688 80%
+  );
+  background: -moz-linear-gradient(
+    180deg,
+    #d75d42 0%,
+    #e2664a 40%,
+    #f1b688 80%
+  );
+}
+
+.about-list__bio-img {
+  padding-top: 45px;
+  height: 35vh;
+  padding-bottom: 10px;
+}
+
+.bio-container {
+  margin: 0 auto;
+  width: 600px;
+  justify-content: center;
+}
+
+.about-list_bio {
+  text-align: justify;
+  line-height: 1.2rem;
+  padding-top: 10px;
+  color: var(--white);
+}
+
+/* about section page end */
+
+.menu__header {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 150px;
+}
+
+.menu__header-sub {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.menu {
+  /* width: 100vw; */
+  height: 100vh;
+  position: relative;
+}
+
+.menu-img-left {
+  height: 15vw;
+  width: 20vw;
+  position: absolute;
+  top: 225px;
+  bottom: auto;
+  left: 30px;
+  border: 5px solid var(--yellow);
+}
+
+.menu-img-right {
+  height: 15vw;
+  width: 20vw;
+  position: absolute;
+  top: 225px;
+  bottom: auto;
+  right: 30px;
+  border: 3px solid var(--black);
+}
+
+.menu__container {
+  display: grid;
+  grid-template-columns: 320px 70px 70px;
+  padding: 3px;
+  justify-content: center;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.menu__container__food {
+  text-align: left;
+  z-index: 1;
+}
+.menu__container__sm {
+  text-align: right;
+  z-index: 1;
+}
+.menu__container__lg {
+  text-align: right;
+  z-index: 1;
+}
+
+/* media */
+
+@media screen and (max-width: 800px) {
+  .nav-header {
+    position: static;
+    display: block;
+    justify-items: center;
+    width: 100vw;
+  }
+
+  .header-main h1 {
+    font-size: 1.5rem;
+
+    text-align: center;
+  }
+
+  .navbar {
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 230px;
+  }
+
+  .navbar__link {
+  }
+}
