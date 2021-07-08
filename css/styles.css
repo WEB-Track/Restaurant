@@ -3,11 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Shojumaru", cursive;
 }
 
-body {
-  min-width: 600px;
-  overflow: auto;
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* colors */
@@ -41,10 +42,10 @@ body {
 .header-main h1 {
   font-size: 2.1rem;
   color: var(--orange);
-  padding-left: 8px;
+  padding-left: 1rem;
 }
 
-.nav-header {
+.header-main {
   display: flex;
   position: fixed;
   width: 100%;
@@ -52,9 +53,13 @@ body {
   z-index: 99;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 57px;
   background-color: var(--yellow);
   border-bottom: 2px solid var(--black);
+}
+
+.navbar {
+  background-color: var(--yellow);
 }
 
 .navbar__link {
@@ -71,13 +76,69 @@ body {
   background-color: var(--red);
 }
 
+.navbar-dropdown {
+  position: relative;
+  display: inline-block;
+  min-width: 140px;
+  z-index: 1;
+}
+
+.navbar-dropdown__btn {
+  background-color: var(--yellow);
+  color: var(--black);
+  padding: 17px 7px;
+  font-size: 1rem;
+  border: none;
+}
+
+.navbar-dropdown__list {
+  display: none;
+  position: absolute;
+  background-color: var(--yellow);
+}
+
+.navbar-dropdown__list a {
+  color: var(--black);
+  padding: 17px 7px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar-dropdown__list a:hover {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.navbar-dropdown:hover .navbar-dropdown__list {
+  display: block;
+}
+
+.navbar-dropdown:hover .navbar-dropdown__btn {
+  background-color: var(--red);
+  color: var(--white);
+}
+
 .hero {
   position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.hero-header {
+  position: relative;
+  font-size: 4rem;
+  font-weight: 700;
+  top: 130px;
+  text-align: center;
+  /* left: 0; */
+  /* right: 0; */
+  color: var(--red);
 }
 
 .hero-img {
-  width: 100vw;
-  min-width: 600px;
+  background: url(../img/chinese-garden4mp.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /* about section page */
@@ -110,6 +171,7 @@ body {
   font-size: 3rem;
   text-align: center;
   line-height: 4rem;
+  font-family: "Inika", serif;
 }
 
 .about-content-container {
@@ -119,6 +181,7 @@ body {
 }
 
 .about-content-quoted {
+  font-family: Arial, Helvetica, sans-serif;
   padding-top: 20px;
   text-align: center;
   font-size: 1.3rem;
@@ -158,9 +221,10 @@ body {
 
 .about-list_bio {
   text-align: justify;
-  line-height: 1.2rem;
+  line-height: 1.4rem;
   padding-top: 10px;
   color: var(--white);
+  font-family: "Inika", serif;
 }
 
 /* about section page end */
@@ -215,14 +279,20 @@ body {
 .menu__container__food {
   text-align: left;
   z-index: 1;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .menu__container__sm {
   text-align: right;
   z-index: 1;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .menu__container__lg {
   text-align: right;
   z-index: 1;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /* media */
