@@ -3,12 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Shojumaru", cursive;
 }
 
 html {
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+body {
+  font-family: "Shojumaru", cursive;
 }
 
 /* colors */
@@ -37,6 +40,7 @@ html {
     #d75d42 5%,
     rgba(241, 182, 136, 0.7) 95%
   );
+  width: 100vw;
 }
 
 .header-main h1 {
@@ -49,7 +53,7 @@ html {
   display: flex;
   position: fixed;
   width: 100%;
-  min-width: 600px;
+  min-width: 360px;
   z-index: 99;
   justify-content: space-between;
   align-items: center;
@@ -89,6 +93,7 @@ html {
   padding: 17px 7px;
   font-size: 1rem;
   border: none;
+  font-family: "Shojumaru", cursive;
 }
 
 .navbar-dropdown__list {
@@ -122,19 +127,20 @@ html {
   position: relative;
   width: 100vw;
   height: 100vh;
+  background: url(../img/chinese-garden4-222.jpg) no-repeat center;
+  background-size: cover;
+  top: 57px;
 }
 .hero-header {
   position: relative;
   font-size: 4rem;
   font-weight: 700;
-  top: 130px;
+  top: 100px;
   text-align: center;
   color: var(--red);
 }
 
 .hero-img {
-  background: url(../img/chinese-garden4-22.jpg) no-repeat center;
-  background-size: cover;
   width: 100%;
   height: 100%;
 }
@@ -158,9 +164,14 @@ html {
   background: -moz-linear-gradient(0deg, #d75d42 0%, #e2664a 40%, #f1b688 80%);
 }
 
-.about-list__sect1__img {
+.about-list-img-container {
   width: 50vw;
   height: 100vh;
+}
+
+.about-list__sect1__img {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -176,6 +187,7 @@ html {
   margin-top: auto;
   margin-bottom: auto;
   z-index: 1;
+  width: 50vw;
 }
 
 .about-content-quoted {
@@ -213,7 +225,7 @@ html {
 
 .bio-container {
   margin: 25px auto auto auto;
-  width: 50vw;
+  width: 60vw;
   justify-content: center;
 }
 
@@ -271,8 +283,10 @@ html {
 
 .menu__container {
   display: grid;
-  grid-template-columns: 320px 70px 70px;
+  grid-template-columns: 6.96fr 1.52fr 1.52fr;
   padding: 3px;
+  padding-left: 25vw;
+  padding-right: 25vw;
   justify-content: center;
   color: var(--black);
   font-weight: bold;
@@ -300,97 +314,103 @@ html {
 /* media */
 
 @media screen and (max-width: 1024px) {
-  .hero {
-    padding-top: 50px;
+  .hero-header {
+    top: 260px;
+    font-size: 5rem;
   }
 
-  .nav-header {
-    display: block;
-    justify-items: center;
-    width: 100vw;
-    height: 90px;
+  .about-list-img-container {
+    width: 50vw;
   }
 
-  .header-main h1 {
-    text-align: center;
-  }
-
-  .navbar {
-    text-align: center;
-    line-height: 2.3rem;
-  }
-
-  .about-list__sect1__img {
-    width: 45vw;
+  .about-content-container {
+    width: 49vw;
   }
 
   .bio-container {
-    width: 55vw;
+    width: 95vw;
   }
 
   .about-list_bio {
-    line-height: 1.8rem;
-    padding-bottom: 10px;
+    line-height: 1.5rem;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .hero {
-    padding-top: 80px;
-  }
-
-  .nav-header {
-    height: 120px;
-  }
-
-  .about-list__sect1__img {
-    width: 45vw;
-  }
-
-  .bio-container {
-    width: 65vw;
+@media screen and (max-width: 768px) {
+  .hero-header {
+    top: 190px;
+    font-size: 4.1rem;
   }
 
   .menu__header {
-    padding-bottom: 20px;
-  }
-
-  .menu-img-right {
-    display: none;
-  }
-  .menu-img-left {
-    display: none;
-  }
-
-  .menu__container {
     font-size: 1.3rem;
-    padding-top: 10px;
+  }
+  .menu__container {
+    font-size: 1rem;
+  }
+
+  .menu-img-container-l {
+    height: 12vw;
+    width: 16vw;
+    left: 15px;
+    top: 280px;
+  }
+
+  .menu-img-container-r {
+    height: 12vw;
+    width: 16vw;
+    right: 15px;
+    top: 280px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .hero {
-    padding-top: 80px;
+@media screen and (max-width: 650px) {
+  .header-main {
+    flex-direction: column;
+    height: 105px;
+  }
+
+  .hero-header {
+    top: 135px;
+    font-size: 3rem;
   }
 
   .nav-header {
-    height: 120px;
+    height: 1200px;
+  }
+
+  .navbar__link {
+    padding: 17px 4px;
   }
 
   .about-list__sect1 {
     flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .about-list-img-container {
+    width: 100vw;
+    height: 65vw;
+    margin-top: 90px;
   }
 
   .about-list__sect1__img {
-    min-width: 600px;
-    height: 50vh;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-content-container {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: auto;
   }
 
   .bio-container {
     width: 95vw;
-    line-height: 1rem;
+    line-height: 1.2rem;
     padding-bottom: 5px;
-    height: 95vh;
+    height: 98vh;
+    font-size: 0.9rem;
   }
 
   .about-list_bio {
@@ -400,21 +420,35 @@ html {
 
   .menu__header {
     padding-bottom: 20px;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
-  .menu-img-right {
+  .menu__header-sub {
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .menu-img-container-l {
     display: none;
   }
-  .menu-img-left {
+  .menu-img-container-r {
     display: none;
   }
 
   .menu {
     height: 95vh;
   }
-
   .menu__container {
-    font-size: 1.3rem;
-    padding-top: 10px;
+    font-size: 0.8rem;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: normal;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
