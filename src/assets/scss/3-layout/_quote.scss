@@ -1,0 +1,41 @@
+// quote section
+
+.quote {
+  margin-top: 80px;
+  @media (min-width: 1440px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.quote-wrapper {
+  width: 90vw;
+  height: auto;
+  padding: 80px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 35px;
+  @media (min-width: 1594px) {
+    width: 100%;
+  }
+}
+
+.quote-content {
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.7);
+  @media (max-width: 576px) {
+    font-size: 2.3rem;
+    line-height: 3.6rem;
+  }
+}
+
+.quote-arthur {
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  @media (max-width: 576px) {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+}

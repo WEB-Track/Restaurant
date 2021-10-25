@@ -1,0 +1,69 @@
+// narbar
+// section
+
+.navbar--border {
+  border-radius: 28px;
+}
+
+.navbar---shadowbox {
+  box-shadow: 6px 6px 26px 1px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 6px 6px 26px 1px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 6px 6px 26px 1px rgba(0, 0, 0, 0.8);
+}
+
+.navbar--between {
+  justify-content: space-between;
+}
+
+.navbar--width {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  line-height: 1.2 !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  @media (min-width: 1440px) {
+    width: 90%;
+  }
+}
+
+.navbar-dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.navbar-dropdown__btn {
+  color: var(--light);
+  padding: 8px 0.5rem;
+  font-size: 1rem;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.navbar-dropdown__list {
+  display: none;
+  position: absolute;
+}
+
+.navbar-dropdown__list a {
+  color: rgba(255, 255, 255, 0.4);
+  padding: 4px 7px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar-dropdown__list a:hover {
+  color: var(--light3);
+}
+
+.navbar-dropdown:hover .navbar-dropdown__list {
+  display: block;
+  color: var(--light3);
+}
+
+.navbar-dropdown:hover .navbar-dropdown__btn:hover {
+  color: var(--light2);
+}

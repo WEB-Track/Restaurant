@@ -1,0 +1,43 @@
+{
+  "name": "Starter_File",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch src/assets/scss:src/assets/css",
+    "sass": "sass src/assets/scss:src/assets/css",
+    "md-dist": "mkdir pub",
+    "md-assets": "cd pub && mkdir assets",
+    "md-css": "cd pub/assets && mkdir css",
+    "md-img": "cd pub/assets && mkdir images",
+    "md-sparty": "cd pub/assets && mkdir secondparty",
+    "md-bs": "cd pub/assets/secondparty && mkdir bootstrap",
+    "cp-html": "cp -r ./src/*.html ./pub",
+    "cp-css": "cp -r ./src/assets/css/*.* ./pub/assets/css",
+    "cp-img": "cp -r ./src/assets/images/*.* ./pub/assets/images",
+    "cp-bs": "cp -r ./node_modules/jquery/dist/jquery.js ./pub/assets/secondparty/bootstrap/ && cp -r ./node_modules/bootstrap/dist/js/bootstrap.bundle.js ./pub/assets/secondparty/bootstrap/",
+    "new-dir": "npm run md-dist && npm run md-assets && npm run md-css && npm run md-img",
+    "mk-bs": "npm run md-sparty && npm run md-bs",
+    "cp-files": "npm run cp-html && npm run cp-css && npm run cp-img"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WEB-Track/Starter_File.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WEB-Track/Starter_File/issues"
+  },
+  "homepage": "https://github.com/WEB-Track/Starter_File#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "parcel": "^2.0.0-rc.0",
+    "sass": "^1.37.5"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-rc.0"
+  }
+}
