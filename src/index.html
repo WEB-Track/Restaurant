@@ -23,17 +23,7 @@
     <div class="body-img" alt="Photo by Ryutaro Tsukata from Pexels">
       <header class="header-wrapper">
         <nav
-          class="
-            navbar navbar-expand-lg navbar-dark
-            my-1
-            site-max-width
-            pl-4
-            fixed-top
-            navbar--width
-            bg-primary
-            navbar--border navbar--shadowbox navbar--between
-            text-light
-          "
+          class="navbar navbar-expand-lg navbar-dark my-1 site-max-width pl-4 fixed-top navbar--width bg-primary navbar--border navbar--shadowbox navbar--between text-light"
         >
           <div class="navbar--container">
             <a class="navbar-brand" href="#">King Moon</a>
@@ -61,21 +51,8 @@
                 <li class="nav-item">
                   <a class="nav-link text-light" href="#chef">Chef</a>
                 </li>
-                <li class="nav-item navbar-dropdown">
-                  <button class="navbar-dropdown__btn bg-transparent">
-                    Menu <i class="far fa-caret-square-down"></i>
-                  </button>
-                  <div class="navbar-dropdown__list bg-primary">
-                    <a class="text-light" href="#appet">Appetizers</a>
-                    <a class="text-light" href="#soup">Soup</a>
-                    <a class="text-light" href="#fried">Fried Rice</a>
-                    <a class="text-light" href="#lo-mein">Lo Mein</a>
-                    <a class="text-light" href="#beef">Beef</a>
-                    <a class="text-light" href="#pork">Pork</a>
-                    <a class="text-light" href="#chicken">Chicken</a>
-                    <a class="text-light" href="#comb">Combination</a>
-                    <a class="text-light" href="#lunch">Lunch Special</a>
-                  </div>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#menu">Menu</a>
                 </li>
               </ul>
             </div>
@@ -147,640 +124,752 @@
           </div>
         </div>
       </section>
-      <!-- <div class="menu-wrapper" id="menu"> -->
-      <!-- appetizers list -->
+      <div class="menu_outer" id="menu">
+        <div class="menu-wrapper">
+          <section class="menu-btns menu-row-1 site-max-width">
+            <button
+              class="menu-tab-btn tab1"
+              data-tab="appet"
+              data-tab2="appet2"
+            >
+              Appetizers
+            </button>
+            <button
+              class="menu-tab-btn tab1"
+              data-tab="lo-mein"
+              data-tab2="lo-mein2"
+            >
+              Lo Mein
+            </button>
+            <button
+              class="menu-tab-btn tab1"
+              data-tab="chicken"
+              data-tab2="chicken2"
+            >
+              Chicken
+            </button>
+            <button
+              class="menu-tab-btn tab1"
+              data-tab="lunch"
+              data-tab2="lunch2"
+            >
+              Lunch Special
+            </button>
+          </section>
+          <section class="menu-btns menu-row-2 site-max-width menu-row-active">
+            <button
+              class="menu-tab-btn tab2"
+              data-tab="fried"
+              data-tab2="fried2"
+              id="fried2"
+            >
+              Fried Rice
+            </button>
+            <button
+              class="menu-tab-btn tab2"
+              data-tab="soup"
+              data-tab2="soup2"
+              id="soup2"
+            >
+              Soup
+            </button>
+            <button
+              class="menu-tab-btn tab2"
+              data-tab="beef"
+              data-tab2="beef2"
+              id="beef2"
+            >
+              Beef
+            </button>
+            <button
+              class="menu-tab-btn tab2"
+              data-tab="pork"
+              data-tab2="pork2"
+              id="pork2"
+            >
+              Pork
+            </button>
+            <button
+              class="menu-tab-btn tab2"
+              data-tab="comb"
+              data-tab2="comp2"
+              id="comp2"
+            >
+              Combination
+            </button>
+          </section>
+          <section class="menu-btns menu-row-3 site-max-width menu-row-active">
+            <button
+              class="menu-tab-btn tab3 appet menu-tab-btn-active"
+              data-tab="appet"
+              data-tab2="appet2"
+              id="appet2"
+            >
+              Appetizers
+            </button>
+            <button
+              class="menu-tab-btn tab3"
+              data-tab="lo-mein"
+              data-tab2="lo-mein2"
+              id="lo-mein2"
+            >
+              Lo Mein
+            </button>
+            <button
+              class="menu-tab-btn tab3 chicken"
+              data-tab="chicken"
+              data-tab2="chicken2"
+              id="chicken2"
+            >
+              Chicken
+            </button>
+            <button
+              class="menu-tab-btn tab3 lunch"
+              data-tab="lunch"
+              data-tab2="lunch2"
+              id="lunch2"
+            >
+              Lunch Special
+            </button>
+          </section>
+        </div>
+        <!-- appetizers list -->
+        <section class="menu site-max-width menu-list-active" id="appet">
+          <div class="menu-img-container-l">
+            <img
+              src="./assets/images/appet1.png"
+              alt="Photo by Abby Kihano from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <div class="menu-img-container-r">
+            <img
+              src="./assets/images/app1.png"
+              alt="Photo by Momo King from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <header>
+            <h2 class="menu__header">Appetizers</h2>
+          </header>
+          <div class="menu__container">
+            <p class="menu__container__food"></p>
+            <p class="menu__container__sm">Sm.</p>
+            <p class="menu__container__lg">Lg.</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Roast Pork Egg Roll</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$1.35</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Shrimp Egg Roll</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$1.45</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Vegetable Spring Roll</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$1.60</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Spare Ribs</p>
+            <p class="menu__container__sm">$6.50</p>
+            <p class="menu__container__lg">$10.75</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Boneless Spare Ribs</p>
+            <p class="menu__container__sm">$6.95</p>
+            <p class="menu__container__lg">$11.45</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Fried Chicken Wings (5)</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$4.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Cheese Wontons (4) (6)</p>
+            <p class="menu__container__sm">$3.95</p>
+            <p class="menu__container__lg">$4.45</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">
+              Crab Cheese Wontons in White Sauce (4) (6)
+            </p>
+            <p class="menu__container__sm">$4.95</p>
+            <p class="menu__container__lg">$5.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Fried Wontons (4) (6)</p>
+            <p class="menu__container__sm">$3.95</p>
+            <p class="menu__container__lg">$4.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Steamed Wontons (4) (6)</p>
+            <p class="menu__container__sm">$3.95</p>
+            <p class="menu__container__lg">$4.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Steamed Dumplings (6)</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$5.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Fried Dumplings (6)</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$5.95</p>
+          </div>
+        </section>
 
-      <section class="menu site-max-width" id="appet">
-        <div class="menu-img-container-l">
-          <img
-            src="./assets/images/appet1.png"
-            alt="Photo by Abby Kihano from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <div class="menu-img-container-r">
-          <img
-            src="./assets/images/app1.png"
-            alt="Photo by Momo King from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <header>
-          <h2 class="menu__header">Appetizers</h2>
-        </header>
-        <div class="menu__container">
-          <p class="menu__container__food"></p>
-          <p class="menu__container__sm">Sm.</p>
-          <p class="menu__container__lg">Lg.</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Roast Pork Egg Roll</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$1.35</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Shrimp Egg Roll</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$1.45</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Vegetable Spring Roll</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$1.60</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Spare Ribs</p>
-          <p class="menu__container__sm">$6.50</p>
-          <p class="menu__container__lg">$10.75</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Boneless Spare Ribs</p>
-          <p class="menu__container__sm">$6.95</p>
-          <p class="menu__container__lg">$11.45</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Fried Chicken Wings (5)</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$4.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Cheese Wontons (4) (6)</p>
-          <p class="menu__container__sm">$3.95</p>
-          <p class="menu__container__lg">$4.45</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">
-            Crab Cheese Wontons in White Sauce (4) (6)
-          </p>
-          <p class="menu__container__sm">$4.95</p>
-          <p class="menu__container__lg">$5.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Fried Wontons (4) (6)</p>
-          <p class="menu__container__sm">$3.95</p>
-          <p class="menu__container__lg">$4.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Steamed Wontons (4) (6)</p>
-          <p class="menu__container__sm">$3.95</p>
-          <p class="menu__container__lg">$4.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Steamed Dumplings (6)</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$5.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Fried Dumplings (6)</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$5.95</p>
-        </div>
-      </section>
+        <!-- soup list -->
 
-      <!-- soup list -->
+        <section class="menu site-max-width" id="soup">
+          <div class="menu-img-container-l">
+            <img
+              src="./assets/images/soup1.jpg"
+              alt="Photo by Abby Kihano from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <div class="menu-img-container-r">
+            <img
+              src="./assets/images/soup2.jpg"
+              alt="Photo by Cats Coming from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <header>
+            <h2 class="menu__header">Soup</h2>
+          </header>
+          <div class="menu__container">
+            <p class="menu__container__food"></p>
+            <p class="menu__container__sm">Sm.</p>
+            <p class="menu__container__lg">Lg.</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Wonton Soup</p>
+            <p class="menu__container__sm">$2.95</p>
+            <p class="menu__container__lg">$4.75</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken Wonton Soup</p>
+            <p class="menu__container__sm">$4.45</p>
+            <p class="menu__container__lg">$5.75</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Egg Drop Soup</p>
+            <p class="menu__container__sm">$2.95</p>
+            <p class="menu__container__lg">$3.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Wonton Egg Drop Soup</p>
+            <p class="menu__container__sm">$3.15</p>
+            <p class="menu__container__lg">$4.65</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken Rice or Noodle Soup</p>
+            <p class="menu__container__sm">$3.15</p>
+            <p class="menu__container__lg">$4.65</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">
+              Crib Chicken Rice or Noodle Soup
+            </p>
+            <p class="menu__container__sm">$4.15</p>
+            <p class="menu__container__lg">$5.65</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Vegetable Soup</p>
+            <p class="menu__container__sm">$2.95</p>
+            <p class="menu__container__lg">$4.25</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Hot & Sour Soup</p>
+            <p class="menu__container__sm">$3.15</p>
+            <p class="menu__container__lg">$4.95</p>
+          </div>
+        </section>
 
-      <section class="menu site-max-width" id="soup">
-        <div class="menu-img-container-l">
-          <img
-            src="./assets/images/soup1.jpg"
-            alt="Photo by Abby Kihano from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <div class="menu-img-container-r">
-          <img
-            src="./assets/images/soup2.jpg"
-            alt="Photo by Cats Coming from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <header>
-          <h2 class="menu__header">Soup</h2>
-        </header>
-        <div class="menu__container">
-          <p class="menu__container__food"></p>
-          <p class="menu__container__sm">Sm.</p>
-          <p class="menu__container__lg">Lg.</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Wonton Soup</p>
-          <p class="menu__container__sm">$2.95</p>
-          <p class="menu__container__lg">$4.75</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken Wonton Soup</p>
-          <p class="menu__container__sm">$4.45</p>
-          <p class="menu__container__lg">$5.75</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Egg Drop Soup</p>
-          <p class="menu__container__sm">$2.95</p>
-          <p class="menu__container__lg">$3.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Wonton Egg Drop Soup</p>
-          <p class="menu__container__sm">$3.15</p>
-          <p class="menu__container__lg">$4.65</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken Rice or Noodle Soup</p>
-          <p class="menu__container__sm">$3.15</p>
-          <p class="menu__container__lg">$4.65</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Crib Chicken Rice or Noodle Soup</p>
-          <p class="menu__container__sm">$4.15</p>
-          <p class="menu__container__lg">$5.65</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Vegetable Soup</p>
-          <p class="menu__container__sm">$2.95</p>
-          <p class="menu__container__lg">$4.25</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Hot & Sour Soup</p>
-          <p class="menu__container__sm">$3.15</p>
-          <p class="menu__container__lg">$4.95</p>
-        </div>
-      </section>
+        <!-- fried rice list -->
 
-      <!-- fried rice list -->
+        <section class="menu site-max-width" id="fried">
+          <div class="menu-img-container-l">
+            <img
+              src="./assets/images/fried_rice1.png"
+              alt="Photo by Ricardo Esquivel from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <div class="menu-img-container-r">
+            <img
+              src="./assets/images/fried_rice2.png"
+              alt="Photo by Nadim Shaikh from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <header>
+            <h2 class="menu__header">Fried Rice</h2>
+          </header>
+          <div class="menu__container">
+            <p class="menu__container__food"></p>
+            <p class="menu__container__sm">Sm.</p>
+            <p class="menu__container__lg">Lg.</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Plain Fried Rice</p>
+            <p class="menu__container__sm">$4.15</p>
+            <p class="menu__container__lg">$7.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Vegetable Fried Rice</p>
+            <p class="menu__container__sm">$4.55</p>
+            <p class="menu__container__lg">$8.25</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Pork Fried Rice</p>
+            <p class="menu__container__sm">$4.65</p>
+            <p class="menu__container__lg">$8.35</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken Fried Rice</p>
+            <p class="menu__container__sm">$4.65</p>
+            <p class="menu__container__lg">$8.35</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Shrimp Fried Rice</p>
+            <p class="menu__container__sm">$4.85</p>
+            <p class="menu__container__lg">$8.55</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Crib Fried Rice</p>
+            <p class="menu__container__sm">$4.85</p>
+            <p class="menu__container__lg">$8.55</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Crib & Shrimp Fried Rice</p>
+            <p class="menu__container__sm">$4.95</p>
+            <p class="menu__container__lg">$8.65</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken & Shrimp Fried Rice</p>
+            <p class="menu__container__sm">$4.95</p>
+            <p class="menu__container__lg">$8.65</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">House Fried Rice</p>
+            <p class="menu__container__sm">$5.15</p>
+            <p class="menu__container__lg">$8.95</p>
+          </div>
+        </section>
 
-      <section class="menu site-max-width" id="fried">
-        <div class="menu-img-container-l">
-          <img
-            src="./assets/images/fried_rice1.png"
-            alt="Photo by Ricardo Esquivel from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <div class="menu-img-container-r">
-          <img
-            src="./assets/images/fried_rice2.png"
-            alt="Photo by Nadim Shaikh from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <header>
-          <h2 class="menu__header">Fried Rice</h2>
-        </header>
-        <div class="menu__container">
-          <p class="menu__container__food"></p>
-          <p class="menu__container__sm">Sm.</p>
-          <p class="menu__container__lg">Lg.</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Plain Fried Rice</p>
-          <p class="menu__container__sm">$4.15</p>
-          <p class="menu__container__lg">$7.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Vegetable Fried Rice</p>
-          <p class="menu__container__sm">$4.55</p>
-          <p class="menu__container__lg">$8.25</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Pork Fried Rice</p>
-          <p class="menu__container__sm">$4.65</p>
-          <p class="menu__container__lg">$8.35</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken Fried Rice</p>
-          <p class="menu__container__sm">$4.65</p>
-          <p class="menu__container__lg">$8.35</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Shrimp Fried Rice</p>
-          <p class="menu__container__sm">$4.85</p>
-          <p class="menu__container__lg">$8.55</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Crib Fried Rice</p>
-          <p class="menu__container__sm">$4.85</p>
-          <p class="menu__container__lg">$8.55</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Crib & Shrimp Fried Rice</p>
-          <p class="menu__container__sm">$4.95</p>
-          <p class="menu__container__lg">$8.65</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken & Shrimp Fried Rice</p>
-          <p class="menu__container__sm">$4.95</p>
-          <p class="menu__container__lg">$8.65</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">House Fried Rice</p>
-          <p class="menu__container__sm">$5.15</p>
-          <p class="menu__container__lg">$8.95</p>
-        </div>
-      </section>
+        <!-- lo mein list -->
 
-      <!-- lo mein list -->
+        <section class="menu site-max-width" id="lo-mein">
+          <div class="menu-img-container-l">
+            <img
+              src="./assets/images/lomein1.png"
+              alt="Photo by Polina Tankilevitch from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <div class="menu-img-container-r">
+            <img
+              src="./assets/images/lomein2.png"
+              alt="Photo by Acharaporn Kamornboonyarush from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <header>
+            <h2 class="menu__header">Lo Mein</h2>
+          </header>
+          <div class="menu__container">
+            <p class="menu__container__food"></p>
+            <p class="menu__container__sm">Sm.</p>
+            <p class="menu__container__lg">Lg.</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Plain Lo Mein</p>
+            <p class="menu__container__sm">$4.35</p>
+            <p class="menu__container__lg">$7.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Vegetable Lo Mein</p>
+            <p class="menu__container__sm">$4.85</p>
+            <p class="menu__container__lg">$8.15</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Pork Lo Mein</p>
+            <p class="menu__container__sm">$4.95</p>
+            <p class="menu__container__lg">$8.25</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken Lo Mein</p>
+            <p class="menu__container__sm">$4.95</p>
+            <p class="menu__container__lg">$8.25</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Shrimp Lo Mein</p>
+            <p class="menu__container__sm">$4.95</p>
+            <p class="menu__container__lg">$8.25</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Shrimp & Chicken Lo Mein</p>
+            <p class="menu__container__sm">$4.95</p>
+            <p class="menu__container__lg">$8.25</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Beef Lo Mein</p>
+            <p class="menu__container__sm">$4.95</p>
+            <p class="menu__container__lg">$8.25</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">House Lo Mein</p>
+            <p class="menu__container__sm">$5.25</p>
+            <p class="menu__container__lg">$8.95</p>
+          </div>
+        </section>
 
-      <section class="menu site-max-width" id="lo-mein">
-        <div class="menu-img-container-l">
-          <img
-            src="./assets/images/lomein1.png"
-            alt="Photo by Polina Tankilevitch from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <div class="menu-img-container-r">
-          <img
-            src="./assets/images/lomein2.png"
-            alt="Photo by Acharaporn Kamornboonyarush from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <header>
-          <h2 class="menu__header">Lo Mein</h2>
-        </header>
-        <div class="menu__container">
-          <p class="menu__container__food"></p>
-          <p class="menu__container__sm">Sm.</p>
-          <p class="menu__container__lg">Lg.</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Plain Lo Mein</p>
-          <p class="menu__container__sm">$4.35</p>
-          <p class="menu__container__lg">$7.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Vegetable Lo Mein</p>
-          <p class="menu__container__sm">$4.85</p>
-          <p class="menu__container__lg">$8.15</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Pork Lo Mein</p>
-          <p class="menu__container__sm">$4.95</p>
-          <p class="menu__container__lg">$8.25</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken Lo Mein</p>
-          <p class="menu__container__sm">$4.95</p>
-          <p class="menu__container__lg">$8.25</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Shrimp Lo Mein</p>
-          <p class="menu__container__sm">$4.95</p>
-          <p class="menu__container__lg">$8.25</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Shrimp & Chicken Lo Mein</p>
-          <p class="menu__container__sm">$4.95</p>
-          <p class="menu__container__lg">$8.25</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Beef Lo Mein</p>
-          <p class="menu__container__sm">$4.95</p>
-          <p class="menu__container__lg">$8.25</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">House Lo Mein</p>
-          <p class="menu__container__sm">$5.25</p>
-          <p class="menu__container__lg">$8.95</p>
-        </div>
-      </section>
+        <!-- beef list -->
 
-      <!-- beef list -->
+        <section class="menu site-max-width" id="beef">
+          <div class="menu-img-container-l">
+            <img
+              src="./assets/images/beef1.png"
+              alt="Photo by Rachel Claire from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <div class="menu-img-container-r">
+            <img
+              src="./assets/images/beef2.png"
+              alt="Photo by SenuScape from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <header>
+            <h2 class="menu__header">Beef</h2>
+            <p class="menu__header-sub">w/ White Rice</p>
+          </header>
+          <div class="menu__container">
+            <p class="menu__container__food"></p>
+            <p class="menu__container__sm">Sm.</p>
+            <p class="menu__container__lg">Lg.</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Beef & Broccoli</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Pepper Steak & Onions</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Beef w/ Chinese Vegetables</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Beef & Mushrooms</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Curry Beef</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Beef in Black Bean Sauce</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+        </section>
 
-      <section class="menu site-max-width" id="beef">
-        <div class="menu-img-container-l">
-          <img
-            src="./assets/images/beef1.png"
-            alt="Photo by Rachel Claire from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <div class="menu-img-container-r">
-          <img
-            src="./assets/images/beef2.png"
-            alt="Photo by SenuScape from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <header>
-          <h2 class="menu__header">Beef</h2>
-          <p class="menu__header-sub">w/ White Rice</p>
-        </header>
-        <div class="menu__container">
-          <p class="menu__container__food"></p>
-          <p class="menu__container__sm">Sm.</p>
-          <p class="menu__container__lg">Lg.</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Beef & Broccoli</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Pepper Steak & Onions</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Beef w/ Chinese Vegetables</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Beef & Mushrooms</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Curry Beef</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Beef in Black Bean Sauce</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-      </section>
+        <!-- pork list -->
 
-      <!-- pork list -->
+        <section class="menu site-max-width" id="pork">
+          <div class="menu-img-container-l">
+            <img
+              src="./assets/images/pork1.png"
+              alt="Photo by RODNAE Productions from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <div class="menu-img-container-r">
+            <img
+              src="./assets/images/pork2.png"
+              alt="Photo by Cats Coming from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <header>
+            <h2 class="menu__header">Pork</h2>
+            <p class="menu__header-sub">w/ White Rice</p>
+          </header>
+          <div class="menu__container">
+            <p class="menu__container__food"></p>
+            <p class="menu__container__sm">Sm.</p>
+            <p class="menu__container__lg">Lg.</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Roast Pork w/ Broccoli</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Roast Pork w/ Snow Peas</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">
+              Roast Pork w/ Chinese Vegetables
+            </p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Roast Pork w/ Mushrooms</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Roast Pork w/ Almond Sauce</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+        </section>
 
-      <section class="menu site-max-width" id="pork">
-        <div class="menu-img-container-l">
-          <img
-            src="./assets/images/pork1.png"
-            alt="Photo by RODNAE Productions from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <div class="menu-img-container-r">
-          <img
-            src="./assets/images/pork2.png"
-            alt="Photo by Cats Coming from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <header>
-          <h2 class="menu__header">Pork</h2>
-          <p class="menu__header-sub">w/ White Rice</p>
-        </header>
-        <div class="menu__container">
-          <p class="menu__container__food"></p>
-          <p class="menu__container__sm">Sm.</p>
-          <p class="menu__container__lg">Lg.</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Roast Pork w/ Broccoli</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Roast Pork w/ Snow Peas</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Roast Pork w/ Chinese Vegetables</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Roast Pork w/ Mushrooms</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Roast Pork w/ Almond Sauce</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-      </section>
+        <!-- chicken list -->
 
-      <!-- chicken list -->
+        <section class="menu site-max-width" id="chicken">
+          <div class="menu-img-container-l">
+            <img
+              src="./assets/images/Chicken1.png"
+              alt="Photo by Polina Tankilevitch from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <div class="menu-img-container-r">
+            <img
+              src="./assets/images/Chicken2.png"
+              alt="Photo by Janine Beth Salazar from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <header>
+            <h2 class="menu__header">Chicken</h2>
+            <p class="menu__header-sub">w/ White Rice</p>
+          </header>
+          <div class="menu__container">
+            <p class="menu__container__food"></p>
+            <p class="menu__container__sm">Sm.</p>
+            <p class="menu__container__lg">Lg.</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken w/ Broccoli</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken w/ Snow Peas</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken w/ Chinese Vegetables</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken w/ Mushrooms</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken w/ Lobster Sauce</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Curry Chicken</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken w/ String Beans</p>
+            <p class="menu__container__sm">$5.95</p>
+            <p class="menu__container__lg">$10.95</p>
+          </div>
+        </section>
 
-      <section class="menu site-max-width" id="chicken">
-        <div class="menu-img-container-l">
-          <img
-            src="./assets/images/Chicken1.png"
-            alt="Photo by Polina Tankilevitch from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <div class="menu-img-container-r">
-          <img
-            src="./assets/images/Chicken2.png"
-            alt="Photo by Janine Beth Salazar from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <header>
-          <h2 class="menu__header">Chicken</h2>
-          <p class="menu__header-sub">w/ White Rice</p>
-        </header>
-        <div class="menu__container">
-          <p class="menu__container__food"></p>
-          <p class="menu__container__sm">Sm.</p>
-          <p class="menu__container__lg">Lg.</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken w/ Broccoli</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken w/ Snow Peas</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken w/ Chinese Vegetables</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken w/ Mushrooms</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken w/ Lobster Sauce</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Curry Chicken</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken w/ String Beans</p>
-          <p class="menu__container__sm">$5.95</p>
-          <p class="menu__container__lg">$10.95</p>
-        </div>
-      </section>
+        <!-- combination platers list -->
 
-      <!-- combination platers list -->
+        <section class="menu site-max-width" id="comb">
+          <div class="menu-img-container-l">
+            <img
+              src="./assets/images/fried_rice2.png"
+              alt="Photo by Nadim Shaikh from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <div class="menu-img-container-r">
+            <img
+              src="./assets/images/lomein1.png"
+              alt="Photo by Polina Tankilevitch from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <header>
+            <h2 class="menu__header">Combination Platers</h2>
+            <p class="menu__header-sub">
+              Served w/ Egg, Soup & Choice of White Rice or Pork Fried Rice
+            </p>
+          </header>
+          <div class="menu__container">
+            <p class="menu__container__food"></p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">Price</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chow Mein (Chicken / Pork)</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$9.45</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">
+              Lo Mein (Vegetables / Chicken/ Pork
+            </p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$9.45</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken w/ Broccoli</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$9.45</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken w/ Vegetables</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$9.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Sweet & Sour (Chicken / Pork)</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$9.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Curry Chicken</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$9.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Sesame Chicken</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$9.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Beef w/ Broccoli</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$9.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Ganeral Tso's Chicken</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$9.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Pepper Steak</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$9.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Lemon Chicken</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$9.95</p>
+          </div>
+        </section>
 
-      <section class="menu site-max-width" id="comb">
-        <div class="menu-img-container-l">
-          <img
-            src="./assets/images/fried_rice2.png"
-            alt="Photo by Nadim Shaikh from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <div class="menu-img-container-r">
-          <img
-            src="./assets/images/lomein1.png"
-            alt="Photo by Polina Tankilevitch from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <header>
-          <h2 class="menu__header">Combination Platers</h2>
-          <p class="menu__header-sub">
-            Served w/ Egg, Soup & Choice of White Rice or Pork Fried Rice
-          </p>
-        </header>
-        <div class="menu__container">
-          <p class="menu__container__food"></p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">Price</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chow Mein (Chicken / Pork)</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$9.45</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">
-            Lo Mein (Vegetables / Chicken/ Pork
-          </p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$9.45</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken w/ Broccoli</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$9.45</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken w/ Vegetables</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$9.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Sweet & Sour (Chicken / Pork)</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$9.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Curry Chicken</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$9.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Sesame Chicken</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$9.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Beef w/ Broccoli</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$9.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Ganeral Tso's Chicken</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$9.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Pepper Steak</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$9.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Lemon Chicken</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$9.95</p>
-        </div>
-      </section>
+        <!-- lunch specials list -->
 
-      <!-- lunch specials list -->
-
-      <section class="menu site-max-width" id="lunch">
-        <div class="menu-img-container-l">
-          <img
-            src="./assets/images/beef2.png"
-            alt="Photo by SenuScape from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <div class="menu-img-container-r">
-          <img
-            src="./assets/images/combo2.png"
-            alt="Photo by Polina Tankilevitch from Pexels"
-            class="menu-img"
-          />
-        </div>
-        <header>
-          <h2 class="menu__header">Lunch Specials</h2>
-          <p class="menu__header-sub">
-            Served w/ Choice of Egg Roll or Soup & White Rice or Pork Fried Rice
-          </p>
-        </header>
-        <div class="menu__container">
-          <p class="menu__container__food"></p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">Price</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chow Mein (Chicken / Pork)</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$7.45</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">
-            Lo Mein (Vegetables / Chicken/ Pork
-          </p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$7.45</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken w/ Broccoli</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$7.45</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Chicken w/ Vegetables</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$7.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Sweet & Sour (Chicken / Pork)</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$7.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Curry Chicken</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$7.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Sesame Chicken</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$7.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Beef w/ Broccoli</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$7.95</p>
-        </div>
-        <div class="menu__container">
-          <p class="menu__container__food">Ganeral Tso's Chicken</p>
-          <p class="menu__container__sm"></p>
-          <p class="menu__container__lg">$7.95</p>
-        </div>
-      </section>
-      <!-- </div> -->
+        <section class="menu site-max-width" id="lunch">
+          <div class="menu-img-container-l">
+            <img
+              src="./assets/images/beef2.png"
+              alt="Photo by SenuScape from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <div class="menu-img-container-r">
+            <img
+              src="./assets/images/combo2.png"
+              alt="Photo by Polina Tankilevitch from Pexels"
+              class="menu-img"
+            />
+          </div>
+          <header>
+            <h2 class="menu__header">Lunch Specials</h2>
+            <p class="menu__header-sub">
+              Served w/ Choice of Egg Roll or Soup & White Rice or Pork Fried
+              Rice
+            </p>
+          </header>
+          <div class="menu__container">
+            <p class="menu__container__food"></p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">Price</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chow Mein (Chicken / Pork)</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$7.45</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">
+              Lo Mein (Vegetables / Chicken/ Pork
+            </p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$7.45</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken w/ Broccoli</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$7.45</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Chicken w/ Vegetables</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$7.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Sweet & Sour (Chicken / Pork)</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$7.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Curry Chicken</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$7.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Sesame Chicken</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$7.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Beef w/ Broccoli</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$7.95</p>
+          </div>
+          <div class="menu__container">
+            <p class="menu__container__food">Ganeral Tso's Chicken</p>
+            <p class="menu__container__sm"></p>
+            <p class="menu__container__lg">$7.95</p>
+          </div>
+        </section>
+      </div>
       <footer class="footer site-max-width bg-primary" id="footer">
         <p class="footer-text">
           By
@@ -790,5 +879,6 @@
         </p>
       </footer>
     </div>
+    <script src="./js/app.js"></script>
   </body>
 </html>

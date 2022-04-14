@@ -10276,6 +10276,7 @@ template {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  min-width: 497px;
 }
 
 .header-wrapper {
@@ -10423,7 +10424,6 @@ template {
 .menu__header {
   text-align: center;
   font-size: 1.5rem;
-  color: var(--light);
 }
 
 .menu__header-sub {
@@ -10433,11 +10433,61 @@ template {
   color: var(--light);
 }
 
-.menu {
+.menu-wrapper {
+  width: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1200px) {
+  .menu-wrapper {
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .menu-wrapper {
+    width: 100%;
+  }
+}
+
+.menu-btns {
+  display: none;
+  margin: 2px 0;
+}
+
+.menu-row-active {
+  display: block;
+}
+
+.menu-tab-btn {
+  border-radius: 20px 10px 0 0;
+  border-bottom-style: none;
+  padding: 5px 20px;
+  color: var(--dark);
+  background-color: var(--light);
+}
+@media (max-width: 1200px) {
+  .menu-tab-btn {
+    padding: 5px 10px;
+  }
+}
+
+.menu-tab-btn-active {
+  border-radius: 10px 20px 0 0;
+  color: var(--light);
+  background-color: transparent;
+}
+
+.menu-tab-btn:hover {
+  background-color: rgba(8, 6, 0, 0.733);
+  color: var(--light);
+}
+
+.menu_outer {
   height: 100vh;
   position: relative;
   background-color: var(--primary);
-  padding: 80px 0;
+  padding: 35px 0;
   margin-top: 80px;
   width: 90vw;
   margin-left: auto;
@@ -10445,6 +10495,22 @@ template {
   height: auto;
   text-align: center;
   border-radius: 35px;
+  min-width: 497px;
+}
+@media (min-width: 1440px) {
+  .menu_outer {
+    min-height: 497px;
+  }
+}
+
+.menu {
+  display: none;
+  margin-top: 8px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  text-align: center;
 }
 @media (min-width: 1440px) {
   .menu {
@@ -10452,11 +10518,16 @@ template {
   }
 }
 
+.menu-list-active {
+  display: block;
+  color: var(--light);
+}
+
 .menu-img-container-l {
   height: 15vw;
   width: 20vw;
   position: absolute;
-  top: 125px;
+  top: 180px;
   bottom: auto;
   left: 30px;
   max-width: 384px;
@@ -10478,7 +10549,7 @@ template {
   height: 15vw;
   width: 20vw;
   position: absolute;
-  top: 125px;
+  top: 180px;
   bottom: auto;
   right: 30px;
 }
@@ -10506,7 +10577,6 @@ template {
   padding-left: 25vw;
   padding-right: 25vw;
   justify-content: center;
-  color: var(--light);
   font-weight: bold;
 }
 @media (max-width: 992px) {
