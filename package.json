@@ -10,15 +10,17 @@
     "md-assets": "cd pub && mkdir assets",
     "md-css": "cd pub/assets && mkdir css",
     "md-img": "cd pub/assets && mkdir images",
+    "md-js": "cd pub/assets && mkdir js",
     "md-sparty": "cd pub/assets && mkdir secondparty",
     "md-bs": "cd pub/assets/secondparty && mkdir bootstrap",
     "cp-html": "cp -r ./src/*.html ./pub",
     "cp-css": "cp -r ./src/assets/css/*.* ./pub/assets/css",
     "cp-img": "cp -r ./src/assets/images/*.* ./pub/assets/images",
+    "cp-js": "cp -r ./src/assets/js/*.* ./pub/assets/js",
     "cp-bs": "cp -r ./node_modules/jquery/dist/jquery.js ./pub/assets/secondparty/bootstrap/ && cp -r ./node_modules/bootstrap/dist/js/bootstrap.bundle.js ./pub/assets/secondparty/bootstrap/",
     "new-dir": "npm run md-dist && npm run md-assets && npm run md-css && npm run md-img",
     "mk-bs": "npm run md-sparty && npm run md-bs",
-    "cp-files": "npm run cp-html && npm run cp-css && npm run cp-img"
+    "cp-files": "npm run cp-html && npm run cp-css && npm run cp-img && npm run cp-js"
   },
   "repository": {
     "type": "git",

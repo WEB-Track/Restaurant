@@ -10338,6 +10338,7 @@ template {
   margin-left: auto;
   margin-right: auto;
   border-radius: 35px;
+  min-width: 497px;
 }
 @media (min-width: 1594px) {
   .quote-wrapper {
@@ -10373,6 +10374,7 @@ template {
   margin-left: auto;
   margin-right: auto;
   border-radius: 35px;
+  min-width: 497px;
 }
 
 .chef-img-wrapper {
@@ -10511,13 +10513,8 @@ template {
   margin-right: auto;
   height: auto;
   text-align: center;
+  min-height: 497px;
 }
-@media (min-width: 1440px) {
-  .menu {
-    min-height: 497px;
-  }
-}
-
 .menu-list-active {
   display: block;
   color: var(--light);
@@ -10656,6 +10653,7 @@ template {
   margin-left: auto;
   margin-right: auto;
   width: 90vw;
+  min-width: 497px;
   line-height: 1.2 !important;
   padding-top: 2px !important;
   padding-bottom: 2px !important;
