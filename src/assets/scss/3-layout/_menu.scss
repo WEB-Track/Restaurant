@@ -42,8 +42,8 @@ display: block;
   padding: 5px 20px;
   color: var(--dark);
   background-color: var(--light);
-  @media (max-width: 1200px) {
-    padding: 5px 10px;
+  @media (max-width: 768px) {
+    padding: 2px 5px;
 }
 }
 
