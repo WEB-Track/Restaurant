@@ -1,5 +1,5 @@
 {
-  "name": "Starter_File",
+  "name": "restaurant",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,14 +13,19 @@
     "md-js": "cd pub/assets && mkdir js",
     "md-sparty": "cd pub/assets && mkdir secondparty",
     "md-bs": "cd pub/assets/secondparty && mkdir bootstrap",
+    "s-md-sparty": "cd src/assets && mkdir secondparty",
+    "s-md-bs": "cd src/assets/secondparty && mkdir bootstrap",
     "cp-html": "cp -r ./src/*.html ./pub",
     "cp-css": "cp -r ./src/assets/css/*.* ./pub/assets/css",
     "cp-img": "cp -r ./src/assets/images/*.* ./pub/assets/images",
     "cp-js": "cp -r ./src/assets/js/*.* ./pub/assets/js",
-    "cp-bs": "cp -r ./node_modules/jquery/dist/jquery.js ./pub/assets/secondparty/bootstrap/ && cp -r ./node_modules/bootstrap/dist/js/bootstrap.bundle.js ./pub/assets/secondparty/bootstrap/",
+    "cp-bs": "cp -r ./node_modules/jquery/dist/jquery.slim.min.js ./pub/assets/secondparty/bootstrap/ && cp -r ./node_modules/bootstrap/dist/js/bootstrap.bundle.js ./pub/assets/secondparty/bootstrap/",
     "new-dir": "npm run md-dist && npm run md-assets && npm run md-css && npm run md-img",
     "mk-bs": "npm run md-sparty && npm run md-bs",
-    "cp-files": "npm run cp-html && npm run cp-css && npm run cp-img && npm run cp-js"
+    "cp-files": "npm run cp-html && npm run cp-css && npm run cp-img && npm run cp-js",
+    "s-mk-bs": "npm run s-md-sparty && npm run s-md-bs",
+    "s-cp-bs": "cp -r ./node_modules/jquery/dist/jquery.slim.min.js ./src/assets/secondparty/bootstrap/ && cp -r ./node_modules/bootstrap/dist/js/bootstrap.bundle.js ./src/assets/secondparty/bootstrap/",
+    "pub-cp-sparty": "cp -r ./src/assets/secondparty/bootstrap/*.* ./pub/assets/secondparty/bootstrap/"
   },
   "repository": {
     "type": "git",
@@ -34,12 +39,14 @@
   },
   "homepage": "https://github.com/WEB-Track/Starter_File#readme",
   "dependencies": {
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^4.6.1",
     "jquery": "^3.6.0",
     "parcel": "^2.0.0-rc.0",
-    "sass": "^1.37.5"
+    "sass": "^1.52.3"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0-rc.0"
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "cssnano": "^5.1.12",
+    "postcss": "^8.4.14"
   }
 }
