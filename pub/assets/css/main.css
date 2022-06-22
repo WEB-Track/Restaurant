@@ -9858,6 +9858,11 @@ template {
   padding: 20px 0 40px;
   margin-top: 40px;
   line-height: 1.5rem;
+  border-radius: 28px 28px 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  min-width: 497px;
 }
 
 .footer-text {
