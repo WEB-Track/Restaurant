@@ -74,3 +74,7 @@ menuWrapper.addEventListener("click", function (e) {
   var element = document.getElementById(tab);
   element.classList.add("menu-list-active");
 });
+
+// ********** set date ************
+const date = document.getElementById("date");
+date.innerHTML = new Date().getFullYear();
